@@ -5,7 +5,7 @@ import speech_recognition as sr # SpeechRecognition 라이브러리 import하고
 r = sr.Recognizer() # Recognizer 객체 생성
 with sr.Microphone() as source: # 마이크를 source로 사용
     print("녹음 시작")
-    audio = r.listen(source, phrase_time_limit=5) # 마이크를 사용하여 녹음
+    audio = r.listen(source) # 마이크를 사용하여 녹음
     print("녹음 끝")
 
 try:
